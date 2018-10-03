@@ -5,6 +5,11 @@ export {
 } from './phrase';
 
 export {
+    Report,
+    BuildReportParams,
+} from './report';
+
+export {
     HoroscopePeriod,
     HoroscopeSign,
 } from './utils';
