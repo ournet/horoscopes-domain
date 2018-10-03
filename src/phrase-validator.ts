@@ -11,7 +11,7 @@ export class PhraseValidator extends JoiEntityValidator<Phrase> {
 }
 
 const schema = {
-    id: Joi.string().regex(/^[a-z0-9]{36}$/),
+    id: Joi.string().regex(/^[a-z0-9]{32}$/),
     lang: Joi.string().regex(/^[a-z]{2}$/),
     source: Joi.string().trim().min(3).max(100),
     text: Joi.string().min(PHRASE_TEXT_MIN_LENGTH).max(PHRASE_TEXT_MAX_LENGTH).truncate(true),
