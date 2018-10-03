@@ -1,0 +1,6 @@
+
+export const PHRASE_TEXT_MIN_LENGTH = 100;
+export const PHRASE_TEXT_MAX_LENGTH = 1000;
+
+export const REPORT_TEXT_MIN_LENGTH = 100;
+export const REPORT_TEXT_MAX_LENGTH = 2000;

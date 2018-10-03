@@ -1,0 +1,50 @@
+{
+  "name": "@ournet/horoscopes-domain",
+  "version": "0.0.1",
+  "description": "Ournet horoscopes domain module",
+  "main": "./lib/index.js",
+  "types": "./lib/index.d.ts",
+  "scripts": {
+    "pretest": "npm run clean && npm run tsc",
+    "test": "ava --no-cache --verbose lib/**/*.test.js",
+    "posttest": "npm run clean-test-code",
+    "tsc": "tsc",
+    "tscw": "tsc -w",
+    "preversion": "npm run tsc",
+    "postversion": "git push --follow-tags",
+    "prepublishOnly": "npm run tsc && npm run clean-test-code",
+    "clean": "rimraf ./lib",
+    "clean-test-code": "rimraf ./lib/**/*.test.js && rimraf ./lib/**/*.test.d.ts"
+  },
+  "engines": {
+    "node": ">=8.0.0"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ournet/horoscopes-domain.git"
+  },
+  "keywords": [
+    "horoscopes",
+    "horoscopes-domain",
+    "domain",
+    "ournet"
+  ],
+  "author": "Dumitru Cantea",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/ournet/horoscopes-domain/issues"
+  },
+  "homepage": "https://github.com/ournet/horoscopes-domain#readme",
+  "devDependencies": {
+    "@types/joi": "^13.4.4",
+    "@types/node": "latest",
+    "ava": "^0.23.0",
+    "rimraf": "^2.6.2",
+    "typescript": "latest"
+  },
+  "dependencies": {
+    "ellipsize": "^0.1.0",
+    "joi": "^13.6.0",
+    "standard-text": "^0.1.1"
+  }
+}
