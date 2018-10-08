@@ -17,6 +17,14 @@ const schema = {
     text: Joi.string().min(REPORT_TEXT_MIN_LENGTH).max(REPORT_TEXT_MAX_LENGTH).truncate(true),
     sign: Joi.number().integer().min(1).max(12),
     length: Joi.number().integer().min(REPORT_TEXT_MIN_LENGTH).max(REPORT_TEXT_MAX_LENGTH),
+    textHash: Joi.string().lowercase().alphanum().length(32),
+    phrasesIds: Joi.array().items(Joi.string().lowercase().alphanum().length(32).required()).min(1).max(6),
+    numbers: Joi.array().items(Joi.number().integer().min(1).max(50).required()).length(6),
+    stats: Joi.object().keys({
+        success: Joi.number().integer().min(1).max(100).required(),
+        love: Joi.number().integer().min(1).max(100).required(),
+        health: Joi.number().integer().min(1).max(100).required(),
+    }),
 
     createdAt: Joi.string().isoDate(),
     expiresAt: Joi.date().timestamp('unix').raw(),
@@ -29,6 +37,10 @@ const createSchema = Joi.object().keys({
     sign: schema.sign.required(),
     length: schema.length.required(),
     period: schema.period.required(),
+    textHash: schema.textHash.required(),
+    phrasesIds: schema.phrasesIds.required(),
+    numbers: schema.numbers.required(),
+    stats: schema.stats.required(),
 
     createdAt: schema.createdAt.required(),
     expiresAt: schema.expiresAt.required(),

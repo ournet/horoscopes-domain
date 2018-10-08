@@ -9,8 +9,16 @@ export interface Report {
     lang: string
     length: number
     textHash: string
+    numbers: number[]
+    stats: ReportStats
     createdAt: string
     expiresAt: number
+}
+
+export type ReportStats = {
+    success: number
+    love: number
+    health: number
 }
 
 export interface BuildReportParams {

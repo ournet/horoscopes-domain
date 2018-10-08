@@ -1,6 +1,6 @@
 import { HoroscopeSign, isLetter, isDigit, standardText, HoroscopePeriod, zeroPad } from "./utils";
-import { BuildReportParams, Report } from "./report";
-import { md5, atonic, Dictionary, getWeekNumber } from "@ournet/domain";
+import { BuildReportParams, Report, ReportStats } from "./report";
+import { md5, atonic, Dictionary, getWeekNumber, getRandomInt } from "@ournet/domain";
 import { PhraseBuildParams, Phrase } from "./phrase";
 
 const SIGN_NAMES: Dictionary<Dictionary<HoroscopeSignName>> = require('../sign-names.json');
@@ -52,12 +52,14 @@ export class HoroscopesHelper {
             text,
             lang,
             createdAt: createdDate.toISOString(),
-            textHash: md5(params.phrasesIds.sort().join(',')),
+            textHash: HoroscopesHelper.createReportTextHash(params.phrasesIds),
             length: text.length,
             period: params.period,
             phrasesIds: params.phrasesIds,
             sign: params.sign,
             expiresAt: 1,
+            numbers: HoroscopesHelper.generateNumbers(6),
+            stats: HoroscopesHelper.generateStats(),
         }
 
         let ms = createdDate.getTime();
@@ -98,6 +100,10 @@ export class HoroscopesHelper {
         return phrase;
     }
 
+    static createReportTextHash(phrasesIds: string[]) {
+        return md5(phrasesIds.sort().join(','));
+    }
+
     static createPhraseId(text: string) {
         text = text.split('').filter(item => {
             return item === ' ' || isLetter(item) || isDigit(item);
@@ -119,5 +125,33 @@ export class HoroscopesHelper {
         text = standardText(text, lang.toLowerCase());
 
         return text;
+    }
+
+    static generateNumbers(count: number) {
+        const numbers = [];
+        for (var i = 0; i < count; i++) {
+            let number;
+            do {
+                number = getRandomInt(1, 50);
+            } while (numbers.indexOf(number) > -1)
+            numbers.push(number);
+        }
+
+        return numbers;
+    }
+
+    static generateStats() {
+        const validNumbers = [15, 20, 25, 30, 35, 40, 45, 50, 55, 60, 65, 70, 75, 80, 85, 90, 95];
+        const stats: ReportStats = {
+            health: getRandomInt(0, validNumbers.length - 1),
+            love: getRandomInt(0, validNumbers.length - 1),
+            success: getRandomInt(0, validNumbers.length - 1),
+        };
+
+        stats.health = validNumbers[stats.health];
+        stats.love = validNumbers[stats.love];
+        stats.success = validNumbers[stats.success];
+
+        return stats;
     }
 }
