@@ -64,18 +64,18 @@ export class HoroscopesHelper {
 
         let ms = createdDate.getTime();
 
-        switch (params.period) {
+        switch (params.period.substr(0, 1)) {
             case 'D':
-                ms += 1000 * 86400 * 1;
+                ms += 1000 * 86400 * 1 * 2;
                 break;
             case 'W':
-                ms += 1000 * 86400 * 14;
+                ms += 1000 * 86400 * 7 * 2;
                 break;
             case 'M':
-                ms += 1000 * 86400 * 32;
+                ms += 1000 * 86400 * 31 * 2;
                 break;
             case 'Y':
-                ms += 1000 * 86400 * 366;
+                ms += 1000 * 86400 * 366 * 2;
                 break;
         }
 
