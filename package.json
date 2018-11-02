@@ -1,6 +1,6 @@
 {
   "name": "@ournet/horoscopes-domain",
-  "version": "0.0.1",
+  "version": "0.1.0",
   "description": "Ournet horoscopes domain module",
   "main": "./lib/index.js",
   "types": "./lib/index.d.ts",
@@ -36,15 +36,16 @@
   },
   "homepage": "https://github.com/ournet/horoscopes-domain#readme",
   "devDependencies": {
-    "@types/joi": "^13.4.4",
-    "@types/node": "latest",
-    "ava": "^0.23.0",
+    "@types/joi": "^14.0.0",
+    "@types/node": "10.12.2",
+    "ava": "^0.25.0",
     "rimraf": "^2.6.2",
-    "typescript": "latest"
+    "typescript": "3.1.6"
   },
   "dependencies": {
+    "@ournet/domain": "^0.3.3",
     "ellipsize": "^0.1.0",
-    "joi": "^13.6.0",
+    "joi": "^14.0.3",
     "standard-text": "^0.1.1"
   }
 }
