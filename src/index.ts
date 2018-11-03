@@ -34,3 +34,8 @@ export {
 export {
     ReportValidator,
 } from './report-validator';
+
+export {
+    GenerateReportUseCase,
+    GenerateReportUseCaseParams,
+} from './generate-report-use-case';
