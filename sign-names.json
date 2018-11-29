@@ -11,6 +11,10 @@
         "ru": {
             "slug": "aries",
             "name": "Овен"
+        },
+        "bg": {
+            "slug": "oven",
+            "name": "Овен"
         }
     },
     "2": {
@@ -24,6 +28,10 @@
         },
         "ru": {
             "slug": "taurus",
+            "name": "Телец"
+        },
+        "bg": {
+            "slug": "telec",
             "name": "Телец"
         }
     },
@@ -39,6 +47,10 @@
         "ru": {
             "slug": "gemini",
             "name": "Близнецы"
+        },
+        "bg": {
+            "slug": "bliznaci",
+            "name": "Близнаци"
         }
     },
     "4": {
@@ -52,6 +64,10 @@
         },
         "ru": {
             "slug": "cancer",
+            "name": "Рак"
+        },
+        "bg": {
+            "slug": "rak",
             "name": "Рак"
         }
     },
@@ -67,6 +83,10 @@
         "ru": {
             "slug": "leo",
             "name": "Лев"
+        },
+        "bg": {
+            "slug": "luv",
+            "name": "Лъв"
         }
     },
     "6": {
@@ -80,6 +100,10 @@
         },
         "ru": {
             "slug": "virgo",
+            "name": "Дева"
+        },
+        "bg": {
+            "slug": "deva",
             "name": "Дева"
         }
     },
@@ -95,6 +119,10 @@
         "ru": {
             "slug": "libra",
             "name": "Весы"
+        },
+        "bg": {
+            "slug": "vezni",
+            "name": "Везни"
         }
     },
     "8": {
@@ -108,6 +136,10 @@
         },
         "ru": {
             "slug": "scorpio",
+            "name": "Скорпион"
+        },
+        "bg": {
+            "slug": "skorpion",
             "name": "Скорпион"
         }
     },
@@ -123,6 +155,10 @@
         "ru": {
             "slug": "sagittarius",
             "name": "Стрелец"
+        },
+        "bg": {
+            "slug": "strelec",
+            "name": "Стрелец"
         }
     },
     "10": {
@@ -137,6 +173,10 @@
         "ru": {
             "slug": "capricorn",
             "name": "Козерог"
+        },
+        "bg": {
+            "slug": "kozirog",
+            "name": "Козирог"
         }
     },
     "11": {
@@ -150,6 +190,10 @@
         },
         "ru": {
             "slug": "aquarius",
+            "name": "Водолей"
+        },
+        "bg": {
+            "slug": "vodolei",
             "name": "Водолей"
         }
     },
@@ -165,6 +209,10 @@
         "ru": {
             "slug": "pisces",
             "name": "Рыбы"
+        },
+        "bg": {
+            "slug": "ribi",
+            "name": "Риби"
         }
     }
 }
