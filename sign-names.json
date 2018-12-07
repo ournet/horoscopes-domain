@@ -19,6 +19,10 @@
         "it": {
             "slug": "ariete",
             "name": "Ariete"
+        },
+        "hu": {
+            "slug": "kos",
+            "name": "Kos"
         }
     },
     "2": {
@@ -41,6 +45,10 @@
         "it": {
             "slug": "toro",
             "name": "Toro"
+        },
+        "hu": {
+            "slug": "bika",
+            "name": "Bika"
         }
     },
     "3": {
@@ -63,6 +71,10 @@
         "it": {
             "slug": "gemelli",
             "name": "Gemelli"
+        },
+        "hu": {
+            "slug": "ikrek",
+            "name": "Ikrek"
         }
     },
     "4": {
@@ -85,6 +97,10 @@
         "it": {
             "slug": "cancro",
             "name": "Cancro"
+        },
+        "hu": {
+            "slug": "rak",
+            "name": "Rák"
         }
     },
     "5": {
@@ -107,6 +123,10 @@
         "it": {
             "slug": "leone",
             "name": "Leone"
+        },
+        "hu": {
+            "slug": "oroszlan",
+            "name": "Oroszlán"
         }
     },
     "6": {
@@ -129,6 +149,10 @@
         "it": {
             "slug": "vergine",
             "name": "Vergine"
+        },
+        "hu": {
+            "slug": "szuz",
+            "name": "Szűz"
         }
     },
     "7": {
@@ -151,6 +175,10 @@
         "it": {
             "slug": "bilancia",
             "name": "Bilancia"
+        },
+        "hu": {
+            "slug": "merleg",
+            "name": "Mérleg"
         }
     },
     "8": {
@@ -173,6 +201,10 @@
         "it": {
             "slug": "scorpione",
             "name": "Scorpione"
+        },
+        "hu": {
+            "slug": "skorpio",
+            "name": "Skorpió"
         }
     },
     "9": {
@@ -195,6 +227,10 @@
         "it": {
             "slug": "sagittario",
             "name": "Sagittario"
+        },
+        "hu": {
+            "slug": "nyilas",
+            "name": "Nyilas"
         }
     },
     "10": {
@@ -217,6 +253,10 @@
         "it": {
             "slug": "capricorno",
             "name": "Capricorno"
+        },
+        "hu": {
+            "slug": "bak",
+            "name": "Bak"
         }
     },
     "11": {
@@ -239,6 +279,10 @@
         "it": {
             "slug": "acquario",
             "name": "Acquario"
+        },
+        "hu": {
+            "slug": "vizonto",
+            "name": "Vízöntő"
         }
     },
     "12": {
@@ -261,6 +305,10 @@
         "it": {
             "slug": "pesci",
             "name": "Pesci"
+        },
+        "hu": {
+            "slug": "halak",
+            "name": "Halak"
         }
     }
 }
