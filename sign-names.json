@@ -23,6 +23,10 @@
         "hu": {
             "slug": "kos",
             "name": "Kos"
+        },
+        "cs": {
+            "slug": "beran",
+            "name": "Beran"
         }
     },
     "2": {
@@ -49,6 +53,10 @@
         "hu": {
             "slug": "bika",
             "name": "Bika"
+        },
+        "cs": {
+            "slug": "byk",
+            "name": "Býk"
         }
     },
     "3": {
@@ -75,6 +83,10 @@
         "hu": {
             "slug": "ikrek",
             "name": "Ikrek"
+        },
+        "cs": {
+            "slug": "blizenci",
+            "name": "Blíženci"
         }
     },
     "4": {
@@ -101,6 +113,10 @@
         "hu": {
             "slug": "rak",
             "name": "Rák"
+        },
+        "cs": {
+            "slug": "rak",
+            "name": "Rak"
         }
     },
     "5": {
@@ -127,6 +143,10 @@
         "hu": {
             "slug": "oroszlan",
             "name": "Oroszlán"
+        },
+        "cs": {
+            "slug": "lev",
+            "name": "Lev"
         }
     },
     "6": {
@@ -153,6 +173,10 @@
         "hu": {
             "slug": "szuz",
             "name": "Szűz"
+        },
+        "cs": {
+            "slug": "panna",
+            "name": "Panna"
         }
     },
     "7": {
@@ -179,6 +203,10 @@
         "hu": {
             "slug": "merleg",
             "name": "Mérleg"
+        },
+        "cs": {
+            "slug": "vahy",
+            "name": "Váhy"
         }
     },
     "8": {
@@ -205,6 +233,10 @@
         "hu": {
             "slug": "skorpio",
             "name": "Skorpió"
+        },
+        "cs": {
+            "slug": "stir",
+            "name": "Štír"
         }
     },
     "9": {
@@ -231,6 +263,10 @@
         "hu": {
             "slug": "nyilas",
             "name": "Nyilas"
+        },
+        "cs": {
+            "slug": "strelec",
+            "name": "Střelec"
         }
     },
     "10": {
@@ -257,6 +293,10 @@
         "hu": {
             "slug": "bak",
             "name": "Bak"
+        },
+        "cs": {
+            "slug": "kozoroh",
+            "name": "Kozoroh"
         }
     },
     "11": {
@@ -283,6 +323,10 @@
         "hu": {
             "slug": "vizonto",
             "name": "Vízöntő"
+        },
+        "cs": {
+            "slug": "vodnar",
+            "name": "Vodnář"
         }
     },
     "12": {
@@ -309,6 +353,10 @@
         "hu": {
             "slug": "halak",
             "name": "Halak"
+        },
+        "cs": {
+            "slug": "ryby",
+            "name": "Ryby"
         }
     }
 }
