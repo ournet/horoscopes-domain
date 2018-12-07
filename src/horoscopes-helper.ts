@@ -12,7 +12,7 @@ export type HoroscopeSignName = {
 
 export class HoroscopesHelper {
 
-    static getSignName(id: HoroscopeSign, lang: string): HoroscopeSignName | undefined {
+    static getSignName(id: HoroscopeSign | string, lang: string): HoroscopeSignName | undefined {
         return SIGN_NAMES[id.toString()] && SIGN_NAMES[id.toString()][lang];
     }
 
