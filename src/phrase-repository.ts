@@ -1,17 +1,25 @@
-import {
-    RepositoryAccessOptions,
-    Repository,
-} from '@ournet/domain';
-import { Phrase } from './phrase';
-import { HoroscopeSign, HoroscopePeriod } from './utils';
+import { RepositoryAccessOptions, Repository } from "@ournet/domain";
+import { Phrase } from "./phrase";
+import { HoroscopeSign, HoroscopePeriod } from "./utils";
 
 export interface RandomPhrasesQueryParams {
-    lang: string
-    limit: number
-    sign: HoroscopeSign
-    period: HoroscopePeriod
+  lang: string;
+  limit: number;
+  sign: HoroscopeSign;
+  period: HoroscopePeriod;
 }
 
 export interface PhraseRepository extends Repository<Phrase> {
-    random(params: RandomPhrasesQueryParams, options?: RepositoryAccessOptions<Phrase>): Promise<Phrase[]>
+  random(
+    params: RandomPhrasesQueryParams,
+    options?: RepositoryAccessOptions<Phrase>
+  ): Promise<Phrase[]>;
+
+  list(params: PhraseQueryParams): Promise<Phrase[]>;
+}
+
+export interface PhraseQueryParams {
+  lang: string;
+  limit: number;
+  offset?: number;
 }
